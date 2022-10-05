@@ -8,28 +8,29 @@
     <style>
       body{
         display:grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
         grid-template-areas: 
-        "nav header"
-        "header nav"
-        ". ."
-        "main main"
-        "footer footer";
-        row-gap: 10px;
+        "."
+        "header"
+        "nav"
+        "main"
+        "footer";
         column-gap: 10px;
         mask-position: 10px;
+        row-gap: 10px;
       }
       header{
         grid-area: header;
-        rotate: 30deg;
+        rotate: 330deg;
       }
       nav{
-        grid-area: nav;
-        rotate:330deg;
+        grid-area: header;
+        rotate:30deg;
       }
       main{
         grid-area: main;
+
       }
 
       footer{
