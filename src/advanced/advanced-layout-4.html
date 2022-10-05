@@ -6,7 +6,37 @@
     <title>Advanced Layout 4</title>
     <link rel="stylesheet" href="../style.css" />
     <style>
-      /* Doe hier jouw ding! */
+      body{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows:  1fr 20px 1fr;
+      grid-template-areas:
+      "nav header"
+      "p p"
+      "main footer";
+      column-gap: 20px;
+      }
+      header{
+        grid-area: header;
+        z-index: 1;
+      }
+      nav{
+        grid-area: nav;
+        z-index: 1;
+      }
+      main{
+        grid-area: main;
+        z-index: 1;
+      }
+      footer{
+        grid-area: footer;
+        z-index: 1;
+      }
+      p{
+        grid-area: p;
+        rotate: 45deg;
+        z-index:2;
+      }
     </style>
   </head>
   <body id="advanced-layout-4">
@@ -14,5 +44,6 @@
     <nav><a href="../index.html">Terug naar het overzicht</a></nav>
     <main></main>
     <footer></footer>
+    <p></p>
   </body>
 </html>
